@@ -1,0 +1,14 @@
+[package]
+name = "venus_kernel"
+version = "0.1.0"
+authors = ["Jadon Fowler <j@jadon.io>"]
+edition = "2018"
+
+[dependencies]
+bootloader = "0.6.4"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
